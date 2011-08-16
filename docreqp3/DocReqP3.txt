@@ -1,0 +1,139 @@
+                                                                                                                                   
+#####                #        #              ##          ######                             ##                  #          ### ### 
+ #   #                        #               #           #   #                              #                              #   #  
+ #   #                        #               #           #  #                               #                              #   #  
+ #   # ####  ####   ##  ###  ###  ####     ####   ###     ####  ######   ####  ###  ######   #####  ####  #### ##  ####     #   #  
+ ####   # # ##  ##   # #   #  #  ##  ##   #   #  #   #    #  #   #   #  #  #  #   #  #   #   #   #     #   # #  #     #     #   #  
+ #      #   #    #   # #####  #  #    #   #   #  #####    #      #   #  #  #  #####  #   #   #   #  ####   #    #  ####     #   #  
+ #      #   ##  ##   # #      #  ##  ##   #   #  #        #   #  #   #   ##   #      #   #   #   #  #  #   #    #  #  #     #   #  
+###    ###   ####    #  ####  ##  ####     #####  ####   ###### ### ### #####  #### ### ### ### ### ##### ###  ### #####   ### ### 
+                   # #                                                  #   #                                                      
+                   ###                                                  ####                                                       
+#######################################################################################################################################################
+Gerente           : Ricardo e Rogério (Id : 33)
+SQA               : Ayrton e Alisson  (Id : 32)
+Analista & Projeto: Orlindo e Fábio   (Id : 31)
+Codificadores     : Alexandre e Bruno (Id : 34)
+#######################################################################################################################################################
+
+
+
+                          Administração de Recursos - P3
+                           Documento de Requisitos
+
+1. Introdução
+        1.1 Propósito
+        
+                Este documento tem por objetivo descrever os requisitos de um sistema de gestão de recursos de uso compartilhado, que não impliquem
+                investimento além do próprio recurso. Tal classe de recurso consiste de salas, computadores, projetores, dentre outros. Seus leitores
+                (usuários deste documento) são pessoas que tenham interesse em usar o sistema e profissionais envolvidos no desenvolvimento.
+                
+                
+        1.2 Escopo
+                
+                O sistema a ser desenvolvido tem por objetivo prover apoio às atividades envolvidas na gestão de recursos que podem ser compartilhados
+                 por diversos usuários, devendo-se estabelecer cronogramas ou reservas para o uso efetivo.
+                
+                
+2. Descrição Geral
+
+        2.1 Perspectiva do Produto
+
+                2.1.1 Interfaces com outros Sistemas
+
+                        Este sistema não terá uma interface direta com outros sistemas, apenas trocará dados em forma de arquivos texto.
+                        
+
+                2.1.2 Interface com o Usuário
+                        
+                        Esta seção foi deixada a cargo do programador.
+
+                2.1.3 Interface de Hardware
+                        
+                        Não há.
+                
+                2.1.4 Interface de Software
+
+                        Os dados mantidos pelo sistema deverão ser armazenados em um sistema gerenciador de banco de dados MySQL (versão 4.1 ou 
+                        posterior).
+
+                2.1.3 Interface de Hardware
+                        
+                       Não há.
+
+                2.1.5 Interface de Comunicação
+                        
+                        Não há.
+
+                2.1.6 Restrições de Memória
+                        
+                        Deve ser possível de se usar em microcomputadores com 256Kb de RAM.
+
+        2.2. Funções do Produto
+                
+                O sistema deverá manter os dados dos recursos controlados, como identificação, descrição, localização, dentre outros. Todas as
+                 transações, sejam elas de reserva ou de utilização, deverão ser registradas.
+        
+        2.3 Características de Usuários
+        
+                Os usuários serão pessoas interessadas em controlar o uso de tais recursos.
+                
+        2.4 Restrições 
+                
+                A única restrição é quanto à segurança: apenas os responsáveis pelo controle de recursos poderão ter acesso a certas funcionalidades,
+                 de acordo com a descrição das mesmas.
+        
+        2.5 Declarações e Dependências
+                
+                Para o desenvolvimento é necessária a utilização de várias ferramentas que, por se tratar de um trabalho acadêmico, deverão ser
+                 escolhidas pelo desenvolvedor.
+                
+3. Requisitos
+
+        Os requisitos descritos nesta seção estão organizados por classe, na seguinte seqüência: Funcionais, Usabilidade, Manutenibilidade, Desempenho
+         e Outros.
+        
+        3.1 Requisitos Funcionais
+
+                1. O sistema deve permitir ao administrador do sistema a manutenção dos recursos que estarão sob controle. O administrador poderá
+                 também definir quais usuários poderão efetuar a reserva de recursos.
+                
+                2. O sistema deve permitir que os usuários façam reserva de recursos, registrando o dia, a hora inicial e a hora final da utilização.
+                 Os usuários que fizerem reserva poderão fazer o cancelamento da reserva.
+                
+                3. O sistema deve permitir que sejam feitas consultas sobre a disponibilidade de recursos, por tipo de recurso, por período e por
+                 recurso.
+                
+                4. O sistema deve permitir ao administrador a possibilidade de fazer cópia de segurança dos dados mantidos.
+
+                5. O sistema deverá possibilitar a exclusão de dados referentes à movimentação por período.
+
+                6. O sistema permitir relatórios por período sobre a utilização de recursos (as mesmas das consultas)
+
+                7. O sistema deve armazenar os dados em um banco de dados.
+                
+        3.2 Usabilidade
+
+                8. O sistema deve ser de fácil aprendizado e uso
+                
+                9. O sistema de possuir interface gráfica.
+
+        3.3 Manutenibilidade
+
+                10. O sistema deve ser de fácil manutenção.
+                
+                11. A arquitetura do sistema deve ser planejada para facilitar a extensão do mesmo.
+                
+                12. Os artefatos produzidos durante o desenvolvimento devem ser mantidos sob um Gerenciador de Configuração.
+
+                13. Os artefatos devem ser produzidos e mantidos de modo a manter a consistência entre eles.
+
+        3.4 Desempenho
+
+                14. O sistema deve responder ao usuário em, no máximo, 5 segundos. Para casos em que isso não seja possível o usuário deve ser avisado.
+
+        3.5 Outros Requisitos
+
+                15. O sistema de ser desenvolvido para ser usado em ambiente Windows.
+
+
